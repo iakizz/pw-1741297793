@@ -1,0 +1,126 @@
+/*
+ * Questo file contiene lo stile principale del progetto.
+ * Esegue l'import dei file CSS specifici correlati per il reset e la tipografia.
+ * Importa le variabili CSS definite nel tema e applica gli stili globali.
+ * Contiene le direttive @tailwind per inserire i layer di stile predefiniti di Tailwind.
+ *
+ * Al momento della compilazione, produce il file minificato output.css che viene effettivamente richiamato nel progetto.
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './reset.css';
+@import './typography.css';
+
+/* Stili globali degli elementi HTML nativi e per la definizione delle variabili*/
+
+@layer base {
+
+	/* Esportazione delle variabili CSS definite nel tema */
+
+	:root {
+		--color-text-base: theme('colors.text-base');
+		--color-primary: theme('colors.primary-color');
+		--color-primary-light-700: theme('colors.primary-color-light-700');
+		--color-secondary: theme('colors.secondary-color');
+		--color-grey-nickel: theme('colors.grey-nickel');
+		--color-white: theme('colors.white');
+	}
+
+	body::before {
+		display: block;
+		content: '';
+		height: 56px;
+	}
+
+	body {
+		@apply font-light font-primary;
+	}
+
+	button,
+	input,
+	textarea {
+		@apply outline-0;
+	}
+
+	::-webkit-scrollbar {
+    @apply bg-grey-nickel-light-100;
+		width: 12px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		@apply bg-grey-nickel-light-300;
+		border-radius: 15px;
+		border: 1px solid var(--color-grey-nickel);
+	}
+
+  /* Per compensare l'ingombro del menu fixed nello scroll */
+  section {
+    scroll-margin-top: 64px;
+  }
+}
+
+/* Stili per blocchi della user interface e classi riutilizzabili */
+
+@layer components {
+
+	/* Menu mobile: la barra si trasforma in a 'X' al click */
+
+  /*
+   * La prima e la terza barra ruotano di 45 e -45 gradi risultando sovrapposte,
+   * mentre la seconda barra viene nascosta
+   *
+   * La classe active viene aggiunta dinamicamente tramite JS nell'apposito file navbar.js
+   */
+	#hamburger.active .bar:nth-of-type(1) {
+		transform: rotate(45deg) translateY(10px);
+	}
+
+	#hamburger.active .bar:nth-of-type(2) {
+		display: none;
+	}
+
+  #hamburger.active .bar:nth-of-type(3) {
+		transform: rotate(-45deg) translateX(-4px) translateY(-5px);
+	}
+
+	#links .active {
+		@apply text-white cursor-default;
+	}
+
+	a.lightlink {
+		@apply text-white no-underline hover:text-primary-color-light-700;
+	}
+
+	a.btnlink {
+		@apply text-grey-nickel-light-300 no-underline hover:text-white;
+	}
+
+	/* Semplice definizione di Tooltip che utilizza solo CSS, senza JS: rif. https://play.tailwindcss.com/2eBipAu8Bt */
+	.tooltip {
+		@apply invisible absolute rounded shadow-lg px-4 py-1 bg-primary-color bg-opacity-80 text-white text-sm -mt-8;
+	}
+
+	.has-tooltip {
+		@apply cursor-help;
+	}
+
+	.has-tooltip:hover .tooltip {
+		@apply visible z-50;
+	}
+}
+
+/* Stili per utilità e classi atomiche, simili a quelle fornite da Tailwind */
+
+@layer utilities {
+
+	.h-xxs {
+		height: 1px;
+	}
+
+	.h-xs {
+		height: 2px;
+	}
+}

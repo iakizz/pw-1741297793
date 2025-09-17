@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <!-- Meta informazioni di base per la SEO e per fornire informazioni sui contenuti della pagina -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bilancio di Sostenibilità - Il nostro impegno per un futuro sostenibile" />
+
+  <!-- Titolo della pagina -->
+  <title>Impegno ESG e Bilancio di Sostenibilità | Lavazza S.p.A.</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+
+  <!-- Stile CSS principale della pagina, effetto della compilazione del file input.css -->
+  <!-- Contiene le direttive per @tailwind e l'importazione dei file CSS specifici -->
+  <link rel="stylesheet" href="./assets/css/output.css" />
+
+  <!-- Stile CSS extra addizionale, non compilato, utile in caso di aggiustamenti rapidi o override degli stili -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body class="bg-secondary-color-light-100 font-primary">
+
+  <!-- Barra dei menu (responsive) -->
+  <header class="header max-w-screen-xl mx-auto">
+    <nav
+      class="max-w-screen-xl mx-auto flex flex-col sm:flex-row flex-wrap md:items-center px-6 lg:px-8 py-2 justify-between fixed top-0 z-20 w-full bg-secondary-color-dark-500">
+      <div class="flex items-center justify-between sm:justify-around gap-x-2 text-white">
+        <!-- Link alla Home Page: Logo aziendale -->
+        <a href="#" class="opacity-100 py-1 flex items-center">
+          <img src="./assets/img/logo.png" alt="Logo Lavazza S.p.A." class="h-10 mr-2" />
+        </a>
+        <!-- Bottone per l'Hamburger menu per i dispositivi mobili, rimane nascosto per le altre visualizzazioni -->
+        <button class="sm:hidden cursor-pointer flex flex-col justify-center gap-y-1" id="hamburger" aria-label="menu">
+          <div class="w-6 h-1 rounded-lg bg-white bar duration-300"></div>
+          <div class="w-4 h-1 rounded-lg bg-white bar duration-300"></div>
+          <div class="w-6 h-1 rounded-lg bg-white bar duration-300"></div>
+        </button>
+      </div>
+      <!-- Link alle 6 sezioni principali della pagina, raggiungibili tramite ancore, in stile All-in-one page -->
+      <ul class="hidden sm:flex text-gray-400 justify-end items-center gap-x-7 gap-y-5 tracking-wide mt-5 sm:mt-0" id="links">
+        <li class="table-caption mb-5 sm:mb-0">
+          <a href="#strategia" class="lightlink">
+            Strategia di sostenibilità
+          </a>
+        </li>
+        <li class="table-caption mb-5 sm:mb-0">
+          <a href="#obiettivi" class="lightlink">
+            Obiettivi
+          </a>
+        </li>
+        <li class="mb-5 sm:mb-0 mx-0">
+          <a href="#bilancio-sost-2024" class="lightlink">
+            Bilancio 2024
+          </a>
+        </li>
+          <li class="mb-5 sm:mb-0 mx-0">
+            <a href="#download-bilanci" class="lightlink">
+              Archivio bilanci
+            </a>
+          </li>
+        <li class="mb-5 sm:mb-0 mx-0">
+          <a href="#evoluzione-impatto" class="lightlink">
+            Analisi dell'impatto
+          </a>
+          </li>
+          <li class="mb-5 sm:mb-0 mx-0">
+          <a href="#manifesto" class="lightlink">
+            Manifesto
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenuto della Pagina -->
+
+  <main class="main-container max-w-screen-xl mx-auto">
+
+    <!-- Sezione Introduzione -->
+    <!-- La sezione è stata impostata con layout di tipo "Hero" -->
+
+    <section id="intro">
+      <div class="relative bg-white">
+        <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-12 lg:gap-x-8 lg:px-8">
+          <div class="px-6 pt-6 pb-6 lg:col-span-7 lg:px-0 sm:pt-12 sm:pb-12 lg:pt-16 lg:pb-16 xl:col-span-6">
+            <div class="mx-auto max-w-xl lg:mx-0">
+              <img src="./assets/img/logo-simbolo.png" alt="Logo decorativo" class="h-11" />
+              <h1 class="mt-8 text-4xl text-pretty sm:mt-10 sm:text-5xl lg:leading-tight">
+                Il nostro impegno di sostenibilità
+              </h1>
+              <p class="mt-8 text-lg text-pretty sm:text-lg/8">
+                La <strong>trasparenza verso tutti gli stakeholder</strong> è il principio base che guida il Gruppo alla redazione
+                annuale del Bilancio di Sostenibilità, un documento che riporta i risultati raggiunti nel percorso intrapreso verso
+                l'integrazione dei
+                <strong>Sustainable Development Goals dell'Agenda 2030 delle Nazioni Unite.</strong>
+                </p>
+                <p class="mt-8 text-lg text-pretty sm:text-lg/8">
+                  Redigiamo il Bilancio di Sostenibilità secondo gli <strong>standards definiti dal GRI</strong> - Global Reporting
+                  Initiative, che costituiscono lo standard attualmente più diffuso e riconosciuto a livello internazionale in
+                  materia di rendicontazione non finanziaria.
+              </p>
+            </div>
+          </div>
+          <div class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
+            <img src="./assets/img/section-intro.avif" alt="Raccoglitori di caffè"
+              class="aspect-3/2 w-full bg-grey-nickel-dark-300 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Strategia: i 4 princìpi base individuati dall'Agenda 2030 delle Nazioni Unite -->
+    <!-- La sezione è stata impostata con layout di tipo "Standard" + una griglia per i risultati principali dell'ultimo anno -->
+
+    <section id="strategia">
+      <div class="bg-primary-color-dark-300 py-14 sm:py-20">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+            <p class="text-base font-normal text-white">
+              I 4 princìpi base
+            </p>
+            <h2 class="mt-2 text-3xl font-light tracking-tight text-pretty text-white sm:text-4xl">
+              La strategia di sostenibilità
+            </h2>
+            <div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base/7 text-grey-nickel-light-100 lg:max-w-none lg:grid-cols-2">
+              <div>
+                <p>
+                  Il Gruppo Lavazza mira a offrire prodotti di alta qualità attraverso un modello di business responsabile, basato su
+                  innovazione, passione e competenza, secondo un paradigma che integra sostenibilità economica, sociale e ambientale.
+                </p>
+              </div>
+              <div>
+                <p>
+                  Fra i 17 Obiettivi di Sviluppo Sostenibile indicati dall'Agenda 2030 delle Nazioni Unite, sono stati individuati i
+                  <span class="font-normal text-primary-color-light-500">
+                    quattro obiettivi prioritari
+                  </span>
+                  verso cui sono stati principalmente indirizzati l'impegno ed il sostegno aziendale.
+                </p>
+              </div>
+            </div>
+            <dl class="mt-12 grid grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mt-20 lg:grid-cols-4">
+              <!-- Sezione strategia di sostenibilità - Le persone - Colonna 1/4 -->
+              <div class="flex flex-col-reverse gap-y-3 border-l border-grey-nickel-light-700 pl-6">
+                <dt class="text-base/7 text-grey-nickel-light-100 sm:min-h-14">
+                  del personale assunto stabilmente a tempo indeterminato
+                  <div class="has-tooltip mt-5">
+                    <span class="tooltip">
+                      Obiettivo 5 - Parità di genere
+                    </span>
+                    <img src="./assets/img/icn-goal5.avif" class="w-20 border border-white" alt="Obiettivo 5 - Parità di genere">
+                  </div>
+                </dt>
+                <dd class="text-3xl font-semibold text-white">97%</dd>
+                <dd class="text-xl font-normal text-white">
+                  L'impegno verso le persone
+                </dd>
+              </div>
+              <!-- Sezione strategia di sostenibilità - Le comunità - Colonna 2/4 -->
+              <div class="flex flex-col-reverse gap-y-3 border-l border-grey-nickel-light-700 pl-6">
+                <dt class="text-base/7 text-grey-nickel-light-100 sm:min-h-14">
+                  giovani formati professionalmente in 20 Paesi
+                  <div class="has-tooltip mt-5">
+                    <span class="tooltip">
+                      Obiettivo 8 - Lavoro dignitoso e crescita economica
+                    </span>
+                    <img src="./assets/img/icn-goal8.avif" class="w-20 border border-white"
+                      alt="Obiettivo 8 - Lavoro dignitoso e crescita economica">
+                  </div>
+                </dt>
+                <dd class="text-3xl font-semibold text-white">
+                  700
+                </dd>
+                <dd class="text-xl font-normal text-white">
+                  Le comunità locali
+                </dd>
+              </div>
+              <!-- Sezione strategia di sostenibilità - Crescita responsabile - Colonna 3/4 -->
+              <div class="flex flex-col-reverse gap-y-3 border-l border-grey-nickel-light-700 pl-6">
+                <dt class="text-base/7 text-grey-nickel-light-100 sm:min-h-14">
+                  di valore economico distribuito agli stakeholder
+                  <div class="has-tooltip mt-5">
+                    <span class="tooltip">
+                      Obiettivo 12 - Consumo e produzione responsabili
+                    </span>
+                    <img src="./assets/img/icn-goal12.avif" class="w-20 border border-white"
+                      alt="Obiettivo 12 - Consumo e produzione responsabili">
+                    </span>
+                </dt>
+                <dd class="text-3xl font-semibold text-white">
+                  97%
+                </dd>
+                <dd class="text-xl font-normal text-white">
+                  Una crescita responsabile
+                </dd>
+              </div>
+              <!-- Sezione strategia di sostenibilità - Tutela ambientale - Colonna 4/4 -->
+              <div class="flex flex-col-reverse gap-y-3 border-l border-grey-nickel-light-700 pl-6">
+                <dt class="text-base/7 text-grey-nickel-light-100 sm:min-h-14">
+                  del caffè prodotto in stabilimenti che usano energia rinnovabile
+                  <div class="has-tooltip mt-5">
+                    <span class="tooltip">
+                      Obiettivo 13 - Lotta contro il cambiamento climatico
+                    </span>
+                    <img src="./assets/img/icn-goal13.avif" class="w-20 border border-white"
+                      alt="Obiettivo 13 - Lotta contro il cambiamento climatico">
+                  </div>
+                </dt>
+                <dd class="text-3xl font-semibold text-white">
+                  95%
+                </dd>
+                <dd class="text-xl font-normal text-white">
+                  La tutela dell'ambiente
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Obiettivi: i 4 Goal di Sostenibilità nei prossimi anni -->
+    <!-- La sezione si compone di 4 sotto-sezioni organizzate in riga, con immagini alternate -->
+
+    <section id="obiettivi">
+      <!-- Sezione Obiettivi Riga 1 | Goal 5 - Parità di genere -->
+      <div class="relative bg-white">
+        <img
+          src="./assets/img/section-goal5-persone.avif"
+          alt="Goal 5 - Parità di genere" class="h-56 w-full bg-grey-nickel-dark-300 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2" />
+        <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
+          <div class="px-6 pb-12 pt-8 sm:pb-16 sm:pt-10 lg:col-start-2 lg:px-8 lg:pt-16">
+            <div class="mx-auto max-w-2xl lg:mr-0">
+              <h2 class="text-base/8 font-normal text-primary-color-dark-100">
+                Obiettivo 5 - Parità di genere
+              </h2>
+              <p class="mt-2 text-pretty text-2xl font-light tracking-tight sm:text-3xl">
+                L'impegno verso le persone
+              </p>
+              <p class="mt-4 text-md/6">
+                Diversity & Inclusion: il programma Gap Free per la promozione dell’inclusione e la valorizzazione delle
+                diversità è stato esteso a livello globale
+              </p>
+              <dl class="mt-6 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-6">
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Persone assunte a tempo indeterminato
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    97%
+                  </dd>
+                </div>
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Dipendenti totali, di cui 39,1% donne
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    5806
+                  </dd>
+                </div>
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Quota delle donne che ricoprono posizioni manageriali
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    29,7%
+                  </dd>
+                </div>
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Ore di formazione su Diversity & Inclusion (D&I)
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    40.000
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sezione Obiettivi Riga 2 | Goal 8 - Lavoro dignitoso e crescita economica -->
+      <div class="relative bg-white">
+        <img src="./assets/img/section-goal8-comunita.avif" alt="Goal 8 - Lavoro dignitoso e crescita economica"
+          class="h-56 w-full bg-grey-nickel-dark-300 object-cover lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2" />
+        <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
+          <div class="px-6 pb-12 pt-8 sm:pb-16 sm:pt-10 lg:col-start-1 lg:px-8 lg:pt-16">
+            <div class="mx-auto max-w-2xl lg:mr-0">
+              <h2 class="text-base/8 font-normal text-primary-color-dark-100">
+                Obiettivo 8 - Lavoro dignitoso e crescita economica
+              </h2>
+              <p class="mt-2 text-pretty text-2xl font-light tracking-tight sm:text-3xl">
+                L'impegno per le comunità locali
+              </p>
+              <p class="mt-4 text-md/6">
+                Community Care, istituito un programma di inclusione sociale esteso a livello globale in 6 Paesi
+              </p>
+              <dl class="mt-6 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-6">
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Persone formate professionalmente in 20 Paesi
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    700
+                  </dd>
+                </div>
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Persone coinvolte in Italia in programmi di inclusione
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    5.500
+                  </dd>
+                </div>
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Progetti di agricoltura sostenibile promossi da Fondazione Lavazza
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    29
+                  </dd>
+                </div>
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Associazioni coinvolte nel Lavazza Volunteer Program
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    15
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sezione Obiettivi Riga 3 | Goal 12 - Consumo e produzione responsabili -->
+      <div class="relative bg-white">
+        <img
+          src="./assets/img/section-goal12-crescita.avif"
+          alt="Goal 12 - Consumo e produzione responsabili" class="h-56 w-full bg-grey-nickel-dark-300 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2" />
+        <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
+          <div class="px-6 pb-12 pt-8 sm:pb-16 sm:pt-10 lg:col-start-2 lg:px-8 lg:pt-16">
+            <div class="mx-auto max-w-2xl lg:mr-0">
+              <h2 class="text-base/8 font-normal text-primary-color-dark-100">
+                Obiettivo 12 - Consumo e produzione responsabili
+              </h2>
+              <p class="mt-2 text-pretty text-2xl font-light tracking-tight sm:text-3xl">
+                Una crescita responsabile
+              </p>
+              <p class="mt-4 text-md/6">
+                Più di 6.000 persone hanno beneficiato di progetti di promozione dei diritti dell'infanzia in Vietnam
+              </p>
+              <dl class="mt-6 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-6">
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Valore economico distribuito agli stakeholder
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    97%
+                  </dd>
+                </div>
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Audit etico-sociali in 5 Paesi
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    10
+                  </dd>
+                </div>
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Caffè verde da fornitori certificati
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    96%
+                  </dd>
+                </div>
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Valore economico generato
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    3,35 Mld €
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sezione Obiettivi Riga 4 | Goal 13 - Lotta contro il cambiamento climatico -->
+      <div class="relative bg-white">
+        <img src="./assets/img/section-goal13-ambiente.avif" alt="Goal 13 - Lotta contro il cambiamento climatico"
+          class="h-56 w-full bg-grey-nickel-dark-300 object-cover lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2" />
+        <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
+          <div class="px-6 pb-12 pt-8 sm:pb-16 sm:pt-10 lg:col-start-1 lg:px-8 lg:pt-16">
+            <div class="mx-auto max-w-2xl lg:mr-0">
+              <h2 class="text-base/8 font-normal text-primary-color-dark-100">
+                Obiettivo 13 - Lotta contro il cambiamento climatico
+              </h2>
+              <p class="mt-2 text-pretty text-2xl font-light tracking-tight sm:text-3xl">
+                La tutela dell'ambiente
+              </p>
+              <p class="mt-4 text-md/6">
+                Continua la roadmap del packaging sostenibile, ed il processo di decarbonizzazione e ricerca della
+                biodiversità
+              </p>
+              <dl class="mt-6 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-6">
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Caffè prodotto in stabilimenti 100% energia rinnovabile
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    95%
+                  </dd>
+                </div>
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Emissioni di CO2eq rispetto all'anno 2023
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    -9%
+                  </dd>
+                </div>
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Packaging riciclabile
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    81%
+                  </dd>
+                </div>
+                <div class="flex flex-col gap-y-2 border-l border-grey-nickel-light-500 text-grey-nickel-dark-300 pl-6">
+                  <dt class="">
+                    Progetti di agricoltura rigenerativa
+                  </dt>
+                  <dd class="order-first text-2xl font-normal tracking-tight">
+                    3
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione download bilancio attuale anno 2024 -->
+    <!-- La sezione è stata impostata con layout di tipo "Call to Action" (CTA) -->
+
+    <section id="bilancio-sost-2024">
+      <div class="bg-gradient-to-r bg-primary-color-dark-300">
+        <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:flex lg:items-center lg:justify-between lg:px-8">
+          <div class="max-w-4xl lg:w-3/5 font-light">
+            <h2 class="text-white lg:pb-2 text-3xl sm:text-4xl">
+              Scarica il Bilancio di Sostenibilità 2024
+            </h2>
+            <div class="text-primary-color-light-700 lg:pt-2 text-xl sm:text-2xl">
+              e scopri il nostro impegno per un futuro senza disparità, senza barriere, senza gap da colmare
+            </div>
+          </div>
+          <div class="mt-10 flex lg:w-2/5 items-center justify-center gap-x-6 lg:mt-0 lg:shrink-0">
+            <a target="_blank" href="./assets/reports/LavazzaGroup-Bilancio-Sostenibilita-2024.pdf"
+              class="text-white hover:text-white rounded-md bg-primary-color hover:bg-primary-color-light-700 border-2 border-white px-4 py-2 font-normal shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+              Scarica il bilancio 2024
+              </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione download bilanci anni precedenti -->
+    <!-- La sezione è stata impostata con una griglia responsiva 3x2, che in dispositivi più piccoli diventa una semplice griglia 1x1 con contenuti disposti in colonna, grazie all'utilizzo del layout display Grid CSS -->
+
+    <section id="download-bilanci">
+      <div class="bg-white py-16">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-4xl py-4 sm:py-8 text-center">
+            <h2 class="text-balance text-3xl font-light sm:text-4xl">
+              Archivio dei Bilanci di Sostenibilità
+            </h2>
+            <p class="mt-2 text-lg">
+              Confronta i Bilanci di Sostenibilità degli anni precedenti.
+            </p>
+          </div>
+          <!-- Riga 1 - Bilanci 2023 - 2021 -->
+          <div
+            class="mx-auto mt-8 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <!-- Download Bilancio 2023 -->
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-secondary-color-dark-700 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+              <img src="./assets/img/bg-bilancio-2023.avif" alt="Report 2023"
+                class="absolute inset-0 -z-10 size-full object-cover opacity-30" />
+
+              <h3 class="mt-3 text-lg font-normal text-center">
+                <a target="_blank"
+                  href="https://www.lavazzagroup.com/content/dam/lavazza/sostenibilit%C3%A0/Lavazza_BdS2023_ITA_ACC.pdf"
+                  class="btnlink">
+                  <span class="absolute inset-0"></span>
+                  Scarica il Bilancio di Sostenibilità 2023
+                </a>
+              </h3>
+            </article>
+            <!-- Download Bilancio 2022 -->
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-secondary-color-dark-700 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+              <img src="./assets/img/bg-bilancio-2022.avif" alt="Report 2022"
+                class="absolute inset-0 -z-10 size-full object-cover opacity-30" />
+
+              <h3 class="mt-3 text-lg font-normal text-center">
+                <a target="_blank"
+                  href="https://www.lavazzagroup.com/content/dam/lavazza-corporate/come_lavorimo/bilancio_2022_aggiornato/LavazzaSostenibile2022_1402.pdf"
+                  class="btnlink">
+                  <span class="absolute inset-0"></span>
+                  Scarica il Bilancio di Sostenibilità 2022
+                </a>
+              </h3>
+            </article>
+            <!-- Download Bilancio 2021 -->
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-secondary-color-dark-700 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+              <img src="./assets/img/bg-bilancio-2021.avif" alt="Report 2021"
+                class="absolute inset-0 -z-10 size-full object-cover opacity-90" />
+
+              <h3 class="mt-3 text-lg font-normal text-center">
+                <a target="_blank"
+                  href="https://www.lavazzagroup.com/content/dam/lavazza/lavazza-corporate/come-lavoriamo/Lavazza_BilancioDiSostenibilitr2021_IT_web.pdf"
+                  class="btnlink">
+                  <span class="absolute inset-0"></span>
+                  Scarica il Bilancio di Sostenibilità 2021
+                </a>
+              </h3>
+            </article>
+          </div>
+          <!-- Riga 2 - Bilanci 2020 - 2018 -->
+          <div
+            class="mx-auto mt-8 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <!-- Download Bilancio 2020 -->
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-secondary-color-dark-700 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+              <img src="./assets/img/bg-bilancio-2020.avif" alt="Report 2020"
+                class="absolute inset-0 -z-10 size-full object-cover opacity-90" />
+
+              <h3 class="mt-3 text-lg font-normal text-center">
+                <a target="_blank"
+                  href="https://www.lavazzagroup.com/content/dam/lavazza/lavazza-corporate/come-lavoriamo/BilancioSostenibile2020_ITA_def.pdf"
+                  class="btnlink">
+                  <span class="absolute inset-0"></span>
+                  Scarica il Bilancio di Sostenibilità 2020
+                </a>
+              </h3>
+            </article>
+            <!-- Download Bilancio 2019 -->
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-secondary-color-dark-700 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+              <img src="./assets/img/bg-bilancio-2019.avif" alt="Report 2019"
+                class="absolute inset-0 -z-10 size-full object-cover opacity-90" />
+
+              <h3 class="mt-3 text-lg font-normal text-center">
+                <a target="_blank"
+                  href="https://www.lavazzagroup.com/content/dam/lavazza/lavazza-corporate/come-lavoriamo/Sostenibile2019_ITA.pdf"
+                  class="btnlink">
+                  <span class="absolute inset-0"></span>
+                  Scarica il Bilancio di Sostenibilità 2019
+                </a>
+              </h3>
+            </article>
+            <!-- Download Bilancio 2018 -->
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-secondary-color-dark-700 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+              <img src="./assets/img/bg-bilancio-2018.avif" alt="Report 2018"
+                class="absolute inset-0 -z-10 size-full object-cover opacity-90" />
+
+              <h3 class="mt-3 text-lg font-normal text-center">
+                <a target="_blank"
+                  href="https://www.lavazzagroup.com/content/dam/lavazza/lavazza-corporate/come-lavoriamo/Bilancio_di_Sostenibilita_2018.pdf"
+                  class="btnlink">
+                  <span class="absolute inset-0"></span>
+                  Scarica il Bilancio di Sostenibilità 2018
+                </a>
+              </h3>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Evoluzione dell'impegno di sostenibilità negli ultimi 3 anni -->
+    <!-- La sezione è stata implementata con una classica tabella a doppia entrata -->
+    <section id="evoluzione-impatto">
+      <div class="bg-white py-6 sm:py-8">
+        <div class="mx-auto text-center">
+          <h2 class="text-balance text-3xl font-light sm:text-4xl">
+            Analisi dell'impatto ESG nel tempo
+          </h2>
+        </div>
+
+        <div class="mx-auto max-w-2xl px-6 py-8 sm:py-16 lg:max-w-7xl lg:px-8 overflow-auto">
+          <table class="w-full text-left table-auto whitespace-no-wrap text-sm sm:text-base">
+            <colgroup>
+              <col class="w-2/5" />
+              <col class="w-1/5" />
+              <col class="w-1/5" />
+              <col class="w-1/5" />
+            </colgroup>
+            <thead>
+              <tr>
+                <td></td>
+                <th role="columnheader">
+                  <span class="flex justify-center w-11/12 px-2 sm:px-4 py-2 min-w-16 bg-primary-color-dark-100 rounded-md text-white">
+                    2022
+                  </span>
+                </th>
+                <th role="columnheader">
+                  <span class="flex justify-center w-11/12 px-2 sm:px-4 py-2 min-w-16 bg-primary-color-dark-300 rounded-md text-white">
+                    2023
+                  </span>
+                </th>
+                <th role="columnheader">
+                  <span class="flex justify-center w-11/12 px-2 sm:px-4 py-2 min-w-16 bg-primary-color-dark-500 rounded-md text-white">
+                    2024
+                  </span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Sezione Evoluzione dell'impegno Riga 1 - Le Persone al centro -->
+              <tr>
+                <th colspan="4" class="pt-6 pb-1 border-b-2 border-primary-color font-normal text-lg" role="rowheader">
+                  Le Persone al centro
+                </th>
+              </tr>
+              <tr>
+                <td class="py-3 border-b border-grey-nickel-light-300">
+                  Dipendenti donne
+                </td>
+                <td class="py-3 border-b border-grey-nickel-light-300">37,4%</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">39,47%</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">38,6%</td>
+              </tr>
+              <tr>
+                <td class="py-3 border-b border-grey-nickel-light-300">
+                  Numero di donne assunte
+                </td>
+                <td class="py-3 border-b border-grey-nickel-light-300">284</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">329</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">483</td>
+              </tr>
+              <tr>
+                <td class="py-3 border-b border-grey-nickel-light-300">
+                  Ore di formazione pro capite
+                </td>
+                <td class="py-3 border-b border-grey-nickel-light-300">16,5</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">16,6</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">11,9</td>
+              </tr>
+              <!-- Sezione Evoluzione dell'impegno Riga 2 - Le comunità locali -->
+              <tr>
+                <th colspan="4" class="pt-6 pb-1 border-b-2 border-primary-color font-normal text-lg" role="rowheader">
+                  Le comunità locali
+                </th>
+              </tr>
+              <tr>
+                <td class="py-3 border-b border-grey-nickel-light-300">
+                  Associazioni di volontariato
+                </td>
+                <td class="py-3 border-b border-grey-nickel-light-300">15</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">14</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">15</td>
+              </tr>
+              <tr>
+                <td class="py-3 border-b border-grey-nickel-light-300">
+                  Beneficiari di programmi di formazione
+                </td>
+                <td class="py-3 border-b border-grey-nickel-light-300">380</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">600</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">700</td>
+              </tr>
+              <tr>
+                <td class="py-3 border-b border-grey-nickel-light-300">
+                  Paesi coinvolti in programmi di inclusione sociale
+                </td>
+                <td class="py-3 border-b border-grey-nickel-light-300">16</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">19</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">20</td>
+              </tr>
+              <!-- Sezione Evoluzione dell'impegno Riga 3 - Una crescita responsabile -->
+              <tr>
+                <th colspan="4" class="pt-6 pb-1 border-b-2 border-primary-color font-normal text-lg" role="rowheader">
+                  Una crescita responsabile
+                </th>
+              </tr>
+              <tr>
+                <td class="py-3 border-b border-grey-nickel-light-300">
+                  Valore economico distribuito
+                </td>
+                <td class="py-3 border-b border-grey-nickel-light-300">2,60 Ml €</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">3,05 Ml €</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">3,29 Ml €</td>
+              </tr>
+              <tr>
+                <td class="py-3 border-b border-grey-nickel-light-300">
+                  Retribuzioni e benefit distribuiti
+                </td>
+                <td class="py-3 border-b border-grey-nickel-light-300">356.636 €</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">414.322 €</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">479.668 €</td>
+              </tr>
+              <!-- Sezione Evoluzione dell'impegno Riga 4 - La tutela dell'ambiente -->
+              <tr>
+                <th colspan="4" class="pt-6 pb-1 border-b-2 border-primary-color font-normal text-lg" role="rowheader">
+                  La tutela dell'ambiente e delle risorse
+                </th>
+                </tr>
+                <tr>
+                  <td class="py-3 border-b border-grey-nickel-light-300 flex">
+                    <span>Emissioni dirette da energia elettrica</span>
+                    <span class="has-tooltip">
+                      <span class="tooltip">
+                        tCO2eq = tonnellate di anidride carbonica equivalente
+                      </span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="var(--color-primary)"
+                        class="size-5 ml-1">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                      </svg>
+                    </span>
+                  </td>
+                  <td class="py-3 border-b border-grey-nickel-light-300">
+                    42.767
+                    <span class="text-sm">
+                      tCO2eq
+                    </span>
+                  </td>
+                  <td class="py-3 border-b border-grey-nickel-light-300">
+                    40.061
+                    <span class="text-sm">
+                      tCO2eq
+                    </span>
+                  </td>
+                  <td class="py-3 border-b border-grey-nickel-light-300">
+                    38.534
+                    <span class="text-sm">
+                      tCO2eq
+                    </span>
+                  </td>
+              </tr>
+              <tr>
+                <td class="py-3 border-b border-grey-nickel-light-300 flex">
+                  Materiali utilizzati nel packaging
+                  <span class="has-tooltip">
+                    <span class="tooltip">
+                      t = tonnellate
+                    </span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="var(--color-primary)"
+                        class="size-5 ml-1">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                      </svg>
+                  </span>
+                </td>
+                <td class="py-3 border-b border-grey-nickel-light-300">30.448 t</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">29.950 t</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">29.158 t</td>
+              </tr>
+              <tr>
+                <td class="py-3 border-b border-grey-nickel-light-300 flex">
+                  Consumo idrico nella lotta alla deforestazione
+                  <span class="has-tooltip">
+                    <span class="tooltip">
+                      ML = Milioni di Litri
+                    </span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="var(--color-primary)"
+                        class="size-5 ml-1">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                      </svg>
+                  </span>
+                </td>
+                <td class="py-3 border-b border-grey-nickel-light-300">91,8 ML</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">77,9 ML</td>
+                <td class="py-3 border-b border-grey-nickel-light-300">76,8 ML</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sezione Manifesto di Sostenibilità -->
+    <!-- La sezione è stata impostata con layout di tipo "Call to Action" -->
+    <section id="manifesto">
+      <div class="bg-primary-color-dark-300">
+        <div class="px-6 py-16 sm:px-6 sm:py-24 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-balance text-3xl font-light text-white sm:text-4xl">
+              Il Manifesto di Sostenibilità
+            </h2>
+            <p class="mx-auto mt-6 text-pretty text-lg text-primary-color-light-700">
+              Scopri la via scelta dal Gruppo Lavazza per l'inclusione attraverso il percorso Gap Free, che mira alla promozione delle
+              pari opportunità e alla valorizzazione delle diversità.
+            </p>
+            <p class="mx-auto mt-6 text-pretty text-lg text-white">
+              Un percorso strutturato, di medio-lungo periodo, per raggiungere l'eliminazione di ogni tipo di discriminazione,
+              attraverso le tre fasi di ascolto e ricerca,
+              co-design e co-creazione, deployment del piano di trasformazione culturale aziendale
+            </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a target="_blank" href="./assets/reports/Sustainability-Commitment.pdf" class="btnlink font-normal text-lg">
+                Scopri di più
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- I link sono solo simbolici e non puntanto a vere URL perché porterebbero a pagine esterne al progetto -->
+    <footer class="bg-white">
+      <div class="mx-auto px-6 pt-8 pb-8 sm:pt-24 lg:px-8 lg:pt-16">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="space-y-2">
+            <p class="text-sm text-balance">
+              Sono le persone il nostro fattore chiave.
+              L'impegno per favorire diversità, equità e inclusione ci permette di rafforzare il Gruppo grazie a una pluralità di
+              conoscenze, competenze e punti di vista.
+            <div class="text-sm font-normal mt-0">Antonio Baravalle, CEO Lavazza Group</div>
+            <img src="./assets/img/logo-simbolo.png" alt="Simbolo caffè" class="h-8" />
+            </p>
+            </div>
+            <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 class="text-primary-color-dark-100 font-medium">
+                    Sostenibilità
+                  </h3>
+                  <ul role="list" class="mt-6 space-y-4">
+                    <li>
+                      <a href="#!">Ambiente</a>
+                    </li>
+                    <li>
+                      <a href="#!">Sociale</a>
+                    </li>
+                    <li>
+                      <a href="#!">Governance</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mt-10 md:mt-0">
+                  <h3 class="text-primary-color-dark-100 font-medium">Supporto</h3>
+                  <ul role="list" class="mt-6 space-y-4">
+                    <li>
+                      <a href="#!">Invia richiesta</a>
+                    </li>
+                    <li>
+                      <a href="#!">Documentazione</a>
+                    </li>
+                    <li>
+                      <a href="#!">Guide</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 class="text-primary-color-dark-100 font-medium">Azienda</h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a href="#!">Chi siamo</a>
+                  </li>
+                  <li>
+                    <a href="#!">Lavora con noi</a>
+                  </li>
+                  <li>
+                    <a href="#!">Blog</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-10 md:mt-0">
+                <h3 class="text-primary-color-dark-100 font-medium">Legale</h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a href="#!">Termini e condizioni</a>
+                  </li>
+                  <li>
+                    <a href="#!">Privacy policy</a>
+                  </li>
+                  <li>
+                    <a href="#!">Crediti</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-primary-color-light-700 pt-8 sm:mt-20 lg:mt-12">
+          <p class="text-sm text-grey-nickel-dark-300">
+            Lavazza S.p.A. &copy; <span id="year"></span>
+            Tutti i diritti riservati |
+            Crediti: tutte le immagini e i report provengono dal
+            <a href="https://www.lavazzagroup.com" target="_blank" rel="noopener noreferrer" class="text-sm underline">
+              sito Corporate Lavazza
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Caricamento del JS core del tema -->
+  <script src="./assets/js/scripts.js"></script>
+
+  <!-- Caricamento del JS di base per la gestione del menu di navigazione -->
+  <script src="./assets/js/navbar.js"></script>
+
+</body>
+</html>

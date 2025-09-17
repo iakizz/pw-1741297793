@@ -1,0 +1,58 @@
+/* Reset dello stile, applicato per normalizzare alcuni aspetti di base */
+
+@layer base {
+  /* Box sizing, indispensabile per gestione di margini e padding */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  /* Rimuove i margini di default */
+  body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+    margin: 0;
+  }
+
+  /* Rimuove gli stili di elenco per le liste */
+  ul[role='list'], ol[role='list'] {
+    list-style: none;
+  }
+
+  /* Impostazioni di base del body */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: theme('fontFamily.sans');
+    color: theme('colors.text-base', #333333); /* Fallback se non definito */
+    background-color: theme('colors.white', #ffffff);
+  }
+
+  /* Rimuove lo stile di default dei link */
+  a {
+    @apply text-base visited:text-base hover:text-primary-color-dark-100 focus:text-primary-color-dark-100;
+  }
+
+  /* Migliora la gestione delle immagini */
+  img, picture {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Imposta i font per gli elementi del modulo come ereditati*/
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  /* Gestione riduzione movimento */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

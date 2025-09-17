@@ -1,0 +1,22 @@
+{
+	"name": "bare---tailwind",
+	"version": "1.0.0",
+	"description": "Progetto landing page per report di sostenibilità",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"css": "npx tailwindcss -i ./src/input.css -o ./public/assets/css/output.css --minify --watch",
+		"build": "npx tailwindcss -i ./src/input.css -o ./public/assets/css/output.css --minify",
+		"dev": "concurrently \"npm run css\" \"live-server public --port=3000 --open=index.html\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"tailwindcss": "^3.4.4"
+	},
+	"devDependencies": {
+		"concurrently": "^9.2.0",
+		"live-server": "^1.2.2"
+	}
+}
