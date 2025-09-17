@@ -1,6 +1,6 @@
 # Tailwind Framework
 
-Un progetto basato su template per Tailwind CSS v3.3.1
+Un progetto basato su template per Tailwind CSS v3.0
 
 ### Live demo
 
