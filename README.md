@@ -10,7 +10,7 @@ https://iakizz.github.io/pw-1741297793/
 ### Repo
 
 Repository del progetto disponibile qui:
-https://github.com/iakizz/pw-1741297793
+https://github.com/iakizz/pw-1741297793/public/
 
 ### Struttura dei file di progetto
 
