@@ -2,15 +2,15 @@
 
 Un progetto basato su template per Tailwind CSS v3.0
 
-### Live demo
-
-Live demo navigabile disponibile qui:
-https://iakizz.github.io/pw-1741297793/
-
 ### Repo
 
 Repository del progetto disponibile qui:
-https://github.com/iakizz/pw-1741297793/public/
+https://github.com/iakizz/pw-1741297793/
+
+### Live demo
+
+Live demo navigabile disponibile qui:
+https://iakizz.github.io/pw-1741297793/public/
 
 ### Struttura dei file di progetto
 
@@ -25,7 +25,6 @@ public/
 │   └── img/
 │       ├── favicon.ico
 │       └── logo.png
-│       └── logo-simbolo.png
 │       └── section-intro.avif
 │       └── ...
 ├── index.html
