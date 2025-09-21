@@ -25,6 +25,7 @@ public/
 │   └── img/
 │       ├── favicon.ico
 │       └── logo.png
+│       └── logo-simbolo.png
 │       └── section-intro.avif
 │       └── ...
 ├── index.html
@@ -63,4 +64,4 @@ Da terminale, eseguire questi comandi
  [ esegue la build ]
 ```
 
-# pw-1741297793-dev
+# pw-1741297793
